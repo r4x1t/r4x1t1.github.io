@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    color: rgb(23, 25, 29);
+    background: linear-gradient(110deg ,rgb(15, 143, 160),rgb(235, 117, 170));
+}
+body h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 550;
+    opacity:0.9;
+    text-align: center;
+    margin-top:40px;
+    font-size: 36px;
+}
+
+body h3{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 550;
+    opacity:0.9;
+    text-align: center;
+    text-decoration: line-through;
+    margin-top: 25px;
+    margin-bottom: -90px;
+    font-size: 22px;
+}
+
+/* . is for classes in html but not for eg body or head*/
+
+.app{
+
+    background: rgb(255, 255, 255);
+    height:auto;
+    opacity:0.95;
+    width: 90%;
+    max-width: 600px;
+    margin: 150px auto 0;/*NOTE 100px from top left and right auto and 0 from bottom*/
+    border-radius: 15px;
+    padding: 30px;
+
+}
+ 
+.quiz{
+    opacity: 0.95;
+    padding:20px 0;
+}
+.quiz h2{
+    
+    margin-top: -15px;
+    margin-bottom: 10px;
+    opacity:0.95;
+    text-align: left;
+    font-size: 26px;
+    color: #001e4d;
+    font-weight: 600;
+    border-bottom: 2px solid #333;
+    padding-bottom: 20px;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    
+    background:rgb(198, 210, 213);
+    color: #222;
+    font-weight: 550;
+    width:95%;
+    border:1px solid #090445;/*this creates a border of 1px*/
+    padding :12px;
+    margin :22px auto;
+    border-radius: 8px;
+    text-align: left;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.4s;/*this gives the slow transtiton effect to a website*/
+
+}
+
+.btn:hover:not([disabled]){/*this gives the effect of selecting it or hovering over it*/
+    background: #171251;
+    color: aliceblue;
+}
+
+.btn:disabled{
+    cursor: no-drop;
+}
+/*use hash # for id*/
+
+#next-btn{
+    display: block;
+    color: #fff;
+    background:#001e4d;
+    font-weight: 550;
+    width: 150px;
+    border:0;
+    padding:10px;
+    border-radius: 8px;
+    margin: 23px auto -15px;
+    display: none;
+}
+
+.correct{
+
+    background: rgb(133, 251, 133);
+}
+
+.incorrect{
+    background: rgb(225, 71, 71);
+}
